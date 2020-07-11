@@ -48,11 +48,15 @@ const Formulario = ({getRepoUser}) => {
         <Fragment>
 
             {cabecera!=null&&<p>{cabecera.nombre}</p>}
-            <p>{cabecera.apellido}</p>
-            <p>{cabecera.cedula}</p>
-            <p>{cabecera.nacimiento}</p>
-            <p>{cabecera.email}</p>
-            <p>{cabecera.usergit}</p>
+            {cabecera!=null&&<p>{cabecera.apellido}</p>}
+            {cabecera!=null&&<p>{cabecera.cedula}</p>}
+            {cabecera!=null&&<p>{cabecera.nacimiento}</p>}
+            {cabecera!=null&&<p>{cabecera.email}</p>}
+            {cabecera!=null&&<p>{cabecera.usergit}</p>}
+
+
+
+         
 
             <h1>Buscando usuario de GitHub</h1>
             <form onSubmit={enviarDatos}>
