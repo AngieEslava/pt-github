@@ -47,7 +47,7 @@ const Formulario = ({getRepoUser}) => {
     return (
         <Fragment>
 
-            <p>{cabecera.nombre}</p>
+            {cabecera!=null&&<p>{cabecera.nombre}</p>}
             <p>{cabecera.apellido}</p>
             <p>{cabecera.cedula}</p>
             <p>{cabecera.nacimiento}</p>

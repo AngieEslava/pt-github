@@ -8,19 +8,17 @@ const UsersGithub = ({repoUser}) => {
 
     return (
         <div>
-            <table>
-                <tr>
-                    <th>Repositorios</th>
-                </tr>
-                <tr>
+            
+                
+                
                 {
                     repoUser &&
                     repoUser.map((item, index) => ( 
-                    <tr key = {index}>{item.name}</tr> 
+                    <p key = {index}>{item.name}</p> 
                 ))
                 }
-                </tr>
-        </table>
+                
+        
         </div>
     )
 }
