@@ -3,18 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "autoprefixer": "^9.8.6",
     "bootstrap": "^4.5.0",
     "cra-template": "1.0.3",
+    "postcss-cli": "^7.1.1",
     "react": "^16.13.1",
     "react-bootstrap": "^1.1.1",
     "react-data-table-component": "^6.9.6",
     "react-dom": "^16.13.1",
+    "react-icons": "^3.10.0",
     "react-scripts": "3.4.1",
-    "styled-components": "^5.1.1"
+    "styled-components": "^5.1.1",
+    "tailwindcss": "^1.6.2"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "npx tailwindcss build css/tailwind.css -o public/css/style.css",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
