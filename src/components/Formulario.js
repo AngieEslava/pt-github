@@ -54,13 +54,13 @@ const Formulario = ({ getRepoUser }) => {
       {cabecera != null && <div style={{width:'600px'}} class="my-1 bg-indigo-100 border-l-4 border-indigo-500 text-indigo-700 p-1" role="alert"><p class="font-bold">{cabecera.email}</p></div>}
       {cabecera != null && <div style={{width:'600px'}} class="my-1 bg-indigo-100 border-l-4 border-indigo-500 text-indigo-700 p-1" role="alert"><p class="font-bold">{cabecera.usergit}</p></div>}
 
-      <h1 class="mt-4">Buscando usuario de GitHub</h1>
+      <h1 class="font-black mt-4">Buscando usuario de GitHub</h1>
 
       <form
         onSubmit={enviarDatos}
         class="w-full bg-white bg-opacity-50 shadow-md rounded px-8 pt-6 pb-8 mb-4"
       >
-        <h3 class="my-4">Ingresar datos del candidato</h3>
+        <h3 class="font-bold my-4">Ingresar datos del candidato</h3>
         <div class="md:flex md:items-center mb-4">
           <div class="md:w-1/3">
             <label
